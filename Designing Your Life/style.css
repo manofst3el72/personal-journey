@@ -1,0 +1,18 @@
+body {
+	padding: 20px 10px;
+	background-color: lightblue;
+	font-family: "Comic Sans MS";
+}
+h1 {
+	text-align: center;
+}
+
+h2 {
+  	text-decoration: underline;
+}
+
+.sections
+{
+  display: flex;
+  display: -webkit-flex;
+}
