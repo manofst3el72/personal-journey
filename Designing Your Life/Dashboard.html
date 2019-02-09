@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <title>"Designing your Life"-Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+  </head>
+<body>
+  <div class="header">
+    <h1 class="header title">Health/Work/Play/Love</h1>
+    <!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+	
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	
+	title:{
+		text:"Health/Work/Play/Love"
+	},
+  axisY: {
+        maximum: 100,
+        interval: 25
+      },
+	axisY2:{
+		interlacedColor: "rgba(1,77,101,25)",
+		gridColor: "rgba(1,77,101,25)",
+	},
+	data: [{
+		type: "bar",
+		dataPoints: [
+			{ y: 25, label: "Health" , color: "red"},
+			{ y: 25, label: "Love" , color: "red"},
+			{ y: 25, label: "Play" , color: "red" },
+			{ y: 50, label: "Work"  , color: "yellow"},
+
+		]
+	}]
+});
+chart.render();
+
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
