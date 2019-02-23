@@ -31,11 +31,10 @@ var chart = new CanvasJS.Chart("chartContainer", {
 	data: [{
 		type: "bar",
 		dataPoints: [
-			{ y: 25, label: "Health" , color: "red"},
-			{ y: 25, label: "Love" , color: "red"},
-			{ y: 25, label: "Play" , color: "red" },
-			{ y: 50, label: "Work"  , color: "yellow"},
-
+			{ y: 25, x: 6, label: "Play", color: "red" },
+			{ y: 25, x: 5, label: "Love" , color: "red"},
+			{ y: 25, x: 8, label: "Health" , color: "red"},
+			{ y: 50, x: 7, label: "Work"  , color: "yellow"}
 		]
 	}]
 });
@@ -47,5 +46,28 @@ chart.render();
 <body>
 <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1 class="header title">Where Am I? (continued)</h1>
+    <p class="Intro">More from the "Where Am I?"" section of  <a href="https://designingyour.life/the-book/" target="_blank">Designing Your Life</a>. <br><br>
+    </p>
+  </div>
+  <div class="Section Start">
+    <ul>
+			<li><a href="#Health">Health</a></li>
+      <li><a href="#Work">Work</a></li>
+      <li><a href="#Play">Play</a></li>
+      <li><a href="#Love">Love</a></li>
+    </ul>
+
+  <div class="sections" id="Health"><h2>Health </h2></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor suscipit eleifend. Etiam quis risus vel justo sodales sagittis id vitae arcu. Ut fringilla sapien ac augue auctor, in vestibulum odio tempor. Nullam imperdiet aliquam urna vel ultricies. Curabitur volutpat ligula in magna fermentum, nec pellentesque mauris maximus. Integer id odio id mi tincidunt vehicula at a elit. Nunc malesuada ultrices leo, a tempor lorem finibus id. Suspendisse varius nunc eu nunc mollis, ac ultrices sem hendrerit. Nam porttitor nec magna vitae faucibus. Sed consequat quis est vitae sagittis. Vivamus sed congue turpis. Cras vitae tempus odio.</p>
+  
+  <div class="sections" id="Work"><h2>Work</h2></div><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor suscipit eleifend. Etiam quis risus vel justo sodales sagittis id vitae arcu. Ut fringilla sapien ac augue auctor, in vestibulum odio tempor. Nullam imperdiet aliquam urna vel ultricies. Curabitur volutpat ligula in magna fermentum, nec pellentesque mauris maximus. Integer id odio id mi tincidunt vehicula at a elit. Nunc malesuada ultrices leo, a tempor lorem finibus id. Suspendisse varius nunc eu nunc mollis, ac ultrices sem hendrerit. Nam porttitor nec magna vitae faucibus. Sed consequat quis est vitae sagittis. Vivamus sed congue turpis. Cras vitae tempus odio.</p>
+  <div class="sections" id="Play"><h2>Play</h2></div>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor suscipit eleifend. Etiam quis risus vel justo sodales sagittis id vitae arcu. Ut fringilla sapien ac augue auctor, in vestibulum odio tempor. Nullam imperdiet aliquam urna vel ultricies. Curabitur volutpat ligula in magna fermentum, nec pellentesque mauris maximus. Integer id odio id mi tincidunt vehicula at a elit. Nunc malesuada ultrices leo, a tempor lorem finibus id. Suspendisse varius nunc eu nunc mollis, ac ultrices sem hendrerit. Nam porttitor nec magna vitae faucibus. Sed consequat quis est vitae sagittis. Vivamus sed congue turpis. Cras vitae tempus odio.</p>
+	<div class="sections" id="Love"><h2>Love</h2></div>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor suscipit eleifend. Etiam quis risus vel justo sodales sagittis id vitae arcu. Ut fringilla sapien ac augue auctor, in vestibulum odio tempor. Nullam imperdiet aliquam urna vel ultricies. Curabitur volutpat ligula in magna fermentum, nec pellentesque mauris maximus. Integer id odio id mi tincidunt vehicula at a elit. Nunc malesuada ultrices leo, a tempor lorem finibus id. Suspendisse varius nunc eu nunc mollis, ac ultrices sem hendrerit. Nam porttitor nec magna vitae faucibus. Sed consequat quis est vitae sagittis. Vivamus sed congue turpis. Cras vitae tempus odio.</p> 
 </body>
 </html>
